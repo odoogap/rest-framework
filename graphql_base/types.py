@@ -4,7 +4,8 @@
 import graphene
 
 from odoo import fields
-
+import datetime
+from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT as DF
 
 def odoo_attr_resolver(attname, default_value, root, info, **args):
     """An attr resolver that is specialized for Odoo recordsets.
@@ -26,6 +27,7 @@ def odoo_attr_resolver(attname, default_value, root, info, **args):
         if not isinstance(field, fields.Boolean):
             return None
     elif isinstance(field, fields.Datetime):
+        value = datetime.datetime.strptime(value, DF)
         return fields.Datetime.context_timestamp(root, value)
     return value
 
