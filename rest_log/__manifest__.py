@@ -11,6 +11,7 @@
     "author": "Camptocamp, ACSONE, Odoo Community Association (OCA)",
     "maintainers": ["simahawk"],
     "license": "LGPL-3",
+    "installable": False,
     "depends": ["base_rest"],
     "data": [
         "data/ir_config_parameter_data.xml",

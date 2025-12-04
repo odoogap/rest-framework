@@ -9,7 +9,7 @@
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "maintainers": ["mmequignon"],
     "license": "AGPL-3",
-    "installable": True,
+    "installable": False,
     "depends": [
         "fastapi",
         "auth_api_key_group",

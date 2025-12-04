@@ -3,7 +3,7 @@
 
 {
     "name": "GraphQL Demo",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "license": "LGPL-3",
     "author": "ACSONE SA/NV, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/rest-framework",
